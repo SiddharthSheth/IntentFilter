@@ -3,4 +3,10 @@
     <string name="start_browser">Start Browser</string>
     <string name="start_browsing_with_launch_action">Start browsing with launch action</string>
     <string name="exceptional_condition">Exceptional condition</string>
+    <string name="open_text_file">Open Text File</string>
+    <string name="enter_x">Enter X :-</string>
+    <string name="enter_y">Enter Y :-</string>
+    <string name="create_graph">Create Graph</string>
+    <string name="open_graph">Open Graph</string>
+    <string name="open_seekbar">Open Seekbar</string>
 </resources>

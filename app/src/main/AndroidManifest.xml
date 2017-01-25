@@ -19,12 +19,18 @@
         </activity>
         <activity android:name=".CustomActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="ln.intentfilter.CustomActivity.LAUNCH"/>
-                <category android:name = "android.intent.category.DEFAULT" />
-                <data android:scheme = "http" />
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="ln.intentfilter.CustomActivity.LAUNCH" />
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
+        <activity android:name=".GraphActivity" />
+        <activity android:name=".SliderActivity"></activity>
     </application>
 
 </manifest>

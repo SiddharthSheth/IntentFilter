@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnBrowser, btnActionLaunch, btnException;
+    Button btnBrowser, btnActionLaunch, btnException, btnOpenText, btnOpenGraph, btnOpenSeekbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         btnBrowser = (Button)findViewById(R.id.btn_start_browser);
         btnActionLaunch= (Button)findViewById(R.id.btn_start_browserwithlaunch);
         btnException = (Button)findViewById(R.id.btn_exception);
+        btnOpenText = (Button)findViewById(R.id.btn_textopen);
+        btnOpenGraph = (Button)findViewById(R.id.btn_opengraph);
+        btnOpenSeekbar = (Button)findViewById(R.id.btn_openseekbar);
 
         btnBrowser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,5 +49,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentException);
             }
         });
+
+        btnOpenText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentOpentext = new Intent(Intent.ACTION_SEND);
+                //intentOpentext.setDataAndType(Uri.parse("http://www.gmail.com"),"text/plain");
+                intentOpentext.setType("text/plain");
+                startActivity(intentOpentext);
+            }
+        });
+
+        btnOpenGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, GraphActivity.class));
+
+            }
+        });
+
+        btnOpenSeekbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SliderActivity.class));
+            }
+        });
+
     }
 }

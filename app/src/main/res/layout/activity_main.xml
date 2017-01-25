@@ -7,6 +7,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context="ln.intentfilter.MainActivity"
+    android:background="@color/background"
     android:gravity="center">
 
     <Button
@@ -28,5 +29,27 @@
         android:layout_height="wrap_content"
         android:text="@string/exceptional_condition"
         android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_textopen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_text_file"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_opengraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_graph"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_openseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_seekbar"
+        android:layout_marginTop="15dp"/>
+
 
 </LinearLayout>
